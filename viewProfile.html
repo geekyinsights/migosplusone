@@ -1,0 +1,44 @@
+<html>
+  <head>
+    <!-- Load the Firebase library before loading the body. -->
+    <script src="https://www.gstatic.com/firebasejs/3.1.0/firebase.js"></script>
+
+    <!-- Load the jQuery library, which we'll use to manipulate HTML elements with Javascript. -->
+    <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+
+    <!-- Load Bootstrap stylesheet, which will is CSS that makes everything prettier and also responsive (aka will work on all devices of all sizes). -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+  </head>
+<body>
+    <script src="app.js"> </script>
+    <div class="container">
+        <h1>User Profile</h1>
+        <!--creates a javascript table--->
+        <table class="table">
+            <!--headings for table--->
+            <thead>
+              <tr>
+                <th> First Name </th>
+                <th> Last Name </th>
+                <th> Email </th>
+                <th> Phone </th>
+                <th> License</th>
+            </tr>
+            </thead>
+            <!--table body--->
+           <tbody>
+               <tr>
+                   <td id="firstName"></td>
+                   <td id="lastName"></td>
+                   <td id="email"></td>
+                   <td id="phone"></td>
+                   <td id="license"></td>
+
+                   </tr>
+               </tbody>
+           </table>
+       </div>
+
+
+</body>
+  </html>
