@@ -1,10 +1,15 @@
 <html>
 <head>
-    <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
-    <link href="css/style.css" rel="stylesheet">
-    <!-- Load Bootstrap stylesheet, which will is CSS that makes everything prettier and also responsive (aka will work on all devices of all sizes). -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Palanquin+Dark" rel="stylesheet">
 
+      <!-- Load the Firebase library before loading the body. -->
+      <script src="https://www.gstatic.com/firebasejs/3.1.0/firebase.js"></script>
+      <link href="css/style.css" rel="stylesheet">
+      <!-- Load the jQuery library, which we'll use to manipulate HTML elements with Javascript. -->
+      <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+
+      <!-- Load Bootstrap stylesheet, which will is CSS that makes everything prettier and also responsive (aka will work on all devices of all sizes). -->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 </head>
 <nav class="navbar navbar-default">
 <div class="container-fluid">
@@ -20,21 +25,28 @@
 </div>
 </nav>
 <body>
-<div class =container>
-        <div class="row">
-        <h1> Map page </h1>
-        </div>
-        <div class="row ">
-        <form id="sendpicture">
-        <label> Report Crime: Upload an image</label>
-        <input type="file" accept= "image/*" camera="camera"></input>
-        </form>
-        <button onclick="location.href = 'http://migosplusone.paperplane.io/recieved.html';" id=rec>Quest Trip Follow </button>
+    <div class =container>
+            <div class="row">
+            <h1> Map page </h1>
 
-        <button onclick="location.href = 'https://maps.google.com?saddr=29.7217625,-95.3628008&daddr=29.719729,-95.3534427GB&key=AIzaSyD4R_jJUZkKS47dCe_vvVHmVl9bbSe-1nk';" id=nav>Nearest Station</button>
+            <div class="col-12" id="picsend">
+                <form id="sendpicture">
+                <label> Report Crime: Upload an image</label>
+                <input type="file" accept= "image/*" camera="camera"></input>
+                </form>
+          </div>
+           <div class="col-lg-12" id="recieved">
+               <button onclick="location.href = 'http://migosplusone.paperplane.io/recieved.html';" id=rec>Quest Trip Follow </button>
+          </div>
+      <hr>
+           <div class="col-lg-12" id="google">
+               <button onclick="location.href = 'https://maps.google.com?saddr=29.7217625,-95.3628008&daddr=29.719729,-95.3534427GB&key=AIzaSyD4R_jJUZkKS47dCe_vvVHmVl9bbSe-1nk';" id=nav>Nearest Station</button>
+            </div>
         </div>
-</div>
-
+    </div>
+    <footer>
+        <h3> Produced by: Migos Plus 1 Dev Studio</h3>
+    </footer>
 
 
   </body>
